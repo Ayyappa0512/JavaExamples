@@ -9,11 +9,16 @@ public class MapExamples {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-//		mapGenericMethods();
+		Map<String, Integer> map =mapGenericMethods();
 		mapIterationMethods();
+		System.out.println("For each");
+	      map.forEach((k,v) ->{
+	            if(v > 1)
+	                System.out.println("key: "+k+" Value: "+v);
+	        });
 	}
 	
-	public static void mapGenericMethods() {
+	public static Map<String, Integer> mapGenericMethods() {
 		
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		map.put("Anil", 28);
@@ -48,6 +53,8 @@ public class MapExamples {
 		
 		map.replace("Arun", 21);
 		System.out.println(map);
+		
+		return map;
 	
 	}
 	
