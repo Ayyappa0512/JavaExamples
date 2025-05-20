@@ -59,6 +59,8 @@ public class SetExamples {
 		
 		System.out.println(st3);
 		
+		st3.forEach((i) -> {System.out.println(i);});
+		
 	}
 	
 	public static void setIterationMethods() {
