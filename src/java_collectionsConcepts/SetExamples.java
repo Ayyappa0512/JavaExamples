@@ -59,6 +59,8 @@ public class SetExamples {
 		
 		System.out.println(st3);
 		
+		st3.forEach((i) -> {System.out.println(i);});
+		
 	}
 	
 	public static void setIterationMethods() {
@@ -68,7 +70,6 @@ public class SetExamples {
 		Set<String> st3 = new HashSet<String>();
 		
 		st3.addAll(Arrays.asList(s));
-		
 		// set cant have index values so cant be printed using loops
 		
 		
@@ -87,7 +88,6 @@ public class SetExamples {
 		System.out.println(li);
 		
 		//Iterator for the 
-
 		Iterator<String> it = st3.iterator();
 		
 		while(it.hasNext()) {

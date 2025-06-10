@@ -11,6 +11,17 @@ public class ListExamples {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		ArrayList<Integer> li2 = new ArrayList<Integer>();
+		Integer numbers[] = {1, 4, 5, 6, 7, 3, 2, 10}; 
+		Collections.addAll(li2, numbers);
+		System.out.println(li2);	
+		
+		System.out.println("For each using consumer and lamda expressions");
+		li2.forEach((i) -> {
+			System.out.println(i);
+			});
+		
+		li2.spliterator();
 		
 //		arrayListExamples();
 		
@@ -92,9 +103,12 @@ public class ListExamples {
 		
 		System.out.println(al.toString());
 		
+		System.out.println("For each using consumer and lamda expressions 2");
+		al.forEach((i) -> {
+			if(i>5)
+				System.out.println(i);
+			});
+		
 	}
 	
-	
-	
-
 }
