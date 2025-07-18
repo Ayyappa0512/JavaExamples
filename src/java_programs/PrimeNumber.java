@@ -7,7 +7,7 @@ public class PrimeNumber {
 		// Generate prime numbers in the given range 
 		PrimeNumberGenerator(10, 100);
 		
-		PrimeNumberCheck(6);
+		PrimeNumberCheck(2);
 
 	}
 	
@@ -22,7 +22,7 @@ public class PrimeNumber {
 					flag =1;
 				}
 				else if(i == 2) {
-					System.out.println(i+ " ");
+					System.out.print(i+ " ");
 				}
 				else if(i >= 2){
 					
@@ -33,8 +33,8 @@ public class PrimeNumber {
 						}
 					}
 					if(flag == 0) {
-						System.out.println(i+ " ");
-						PrimeNumberCheck(i);
+						System.out.print(i+ " ");
+//						PrimeNumberCheck(i);
 					}
 				}
 			}
@@ -46,10 +46,10 @@ public class PrimeNumber {
 		
 			int flag = 0;
 				if( num < 2) {
-					System.out.println("The given number '"+num+"' is not a prime number");
+					flag=1;
 				}
 				if(num == 2) {
-					System.out.println("The given number '"+num+"' is a prime number");
+					flag=0;
 				}
 				else if(num > 2) {
 					

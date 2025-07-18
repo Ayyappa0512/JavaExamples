@@ -26,13 +26,13 @@ public class ReverseString {
 		String[] words = s.split(" "); // words
 		if (s.contains(w)) {
 			for (String word : words) {
-				StringBuilder sb = new StringBuilder();
-				sb.append(word);
 				if (word.equalsIgnoreCase(w)) {
+					StringBuilder sb = new StringBuilder();
+					sb.append(word);
 					sb.reverse();
 					reverse = reverse.concat(sb + " ");
 				} else {
-					reverse = reverse.concat(sb + " ");
+					reverse = reverse.concat(word + " ");
 				}
 			}
 		} else

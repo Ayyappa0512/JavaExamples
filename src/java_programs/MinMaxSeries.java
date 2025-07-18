@@ -18,6 +18,7 @@ public class MinMaxSeries {
 		minMaxWithoutUsingCollections(numbers2);
 		
 		int[] numbers3 = {8, 2, 7, 3, 4, 9, 5, 11,15};
+		System.out.println(Arrays.toString(numbers3));
 		System.out.println("using without collections");
 		minAnd2ndLastMin(numbers3);
 	 
